@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Rental fee collection</h1>
+    <div class="container">
+        <div class="inputs">
+            <div>
+                <label for="Total number of rooms">Total number of rooms:</label>
+                <input type="text" id="total_rooms" value="200">
+            </div>
+            <div>
+                <label for="Room_value">Cost of one room per month</label>
+                <input type="text" id="room_value" value="Kshs. 20000" readonly>
+            </div>
+            <div>
+                <label for="expenses">Monthly expenses totals to Kshs. </label>
+                <input type="text" name="expenses" id="expenses" value="50000">
+            </div>
+            <div>
+                <label for="ocupied">Number of occupied rooms:</label>
+                <input type="number" placeholder="123 rooms" id="occupied_rooms" required>
+
+            </div>
+            <div>
+                <p>Note: Kindly confirm all the detail above before submiting</p>
+            </div>
+            <button type="submit" onclick="calculate()">Submit</button>
+            <button type="reset" onclick="refresh()">Refresh</button>
+        </div>
+
+        <div class="outputs">
+            <h2 id="header"></h2>
+            <h4 id="Number_of_vacant_rooms"></h4>
+            <h4 id="explanation"></h4>
+            <h4 id="expected_amount"></h4>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

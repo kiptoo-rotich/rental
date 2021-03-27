@@ -108,3 +108,20 @@ h1 {
     text-transform: uppercase;
     font-style: oblique;
 }
+
+@media screen and (max-width: 480px) {
+
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .inputs .inputs>label .inputs>input {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .inputs>button{
+        width: auto;
+    }
+  }

@@ -84,7 +84,7 @@ h1 {
     font-size: 35px;
 }
 
-.inputs>button {
+.inputs>.button>button {
     background: green;
     padding: 8px;
     border-radius: 4px;
@@ -102,7 +102,7 @@ h1 {
     font-size: 19px;
 }
 
-.inputs>button:hover {
+.inputs>.button:hover {
     background: rgb(9, 66, 9);
     font-weight: 500;
     font-size: 20px;
@@ -114,13 +114,27 @@ h1 {
     body {
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 10px;
+        background-image: url(Images/rent.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .inputs{
         width: 80%;
-        overflow: unset;        
+        overflow: unset;
+        opacity: 0.8;        
     }
-    .inputs>button {
+
+    .inputs>div>input{
         width: auto;
+    }
+
+    .inputs>.button {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }

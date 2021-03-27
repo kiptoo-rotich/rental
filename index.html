@@ -11,6 +11,10 @@
 
 <body>
     <h1>Rental fee collection</h1>
+    <div class="guide_container">
+        <button id="guide" value="Guide" onclick="guide()">Guide</button>
+        <p id="guide_text"></p>
+    </div>
     <div class="container">
         <div class="inputs">
             <div>
@@ -23,7 +27,7 @@
             </div>
             <div>
                 <label for="expenses">Monthly expenses totals to Kshs. </label>
-                <input type="text" name="expenses" id="expenses" value="50000">
+                <input type="number" name="expenses" id="expenses" value="50000">
             </div>
             <div>
                 <label for="ocupied">Number of occupied rooms:</label>

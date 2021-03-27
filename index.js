@@ -22,7 +22,7 @@ function calculate() {
         let vacant = (total_rooms - occupied_rooms);
         if (vacant < 0 || vacant > total_rooms) {
             document.getElementById("header").innerHTML = "Results";
-            document.getElementById("Number_of_vacant_rooms").innerHTML = "&#10004 You have entered wrong number of occupied roomd. Kindly re-check."
+            document.getElementById("Number_of_vacant_rooms").innerHTML = "&#10004 You have entered wrong number of occupied room.<br> Kindly re-check."
         } else if (vacant == 0) {
             document.getElementById("header").innerHTML = "Results";
             document.getElementById("Number_of_vacant_rooms").innerHTML = "&#10004 All rooms are occupied.";

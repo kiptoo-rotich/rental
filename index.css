@@ -27,7 +27,7 @@ body {
     text-align: right;
     font-size: 19px;
     color: yellow;
-    width: 15%;
+    width: 30%;
     clear: right;
     margin-right: 5%;
     margin-top: 3%;
@@ -37,6 +37,7 @@ body {
 .guide_container>button:hover {
     background-color: white;
     color: teal;
+    font-weight: 600;
 }
 
 h1 {
@@ -50,13 +51,15 @@ h1 {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 3%;
+    margin-left: 30%;
 }
 
 .inputs {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
     position: sticky;
     border: 2px solid blue;
     padding: 20px;
@@ -155,12 +158,16 @@ h1 {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-    .guide_container>p{
+    .guide_container>p {
         clear: both;
         width: 80%;
     }
-
+    .guide_container {
+        clear: both;
+    }
+    .container {
+        clear: both;
+    }
     h1 {
         text-transform: uppercase;
     }

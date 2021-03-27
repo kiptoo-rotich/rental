@@ -19,10 +19,11 @@ h1 {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 3%;
+    columns: 2;
 }
 
 .inputs {
@@ -110,18 +111,16 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-
-    body{
+    body {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-    .inputs .inputs>label .inputs>input {
-        width: 50%;
-        overflow: hidden;
+    
+    .inputs{
+        width: 80%;
+        overflow: unset;        
     }
-
-    .inputs>button{
+    .inputs>button {
         width: auto;
     }
-  }
+}

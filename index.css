@@ -84,6 +84,13 @@ h1 {
     font-size: 35px;
 }
 
+.inputs>.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .inputs>.button>button {
     background: green;
     padding: 8px;

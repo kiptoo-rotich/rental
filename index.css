@@ -7,8 +7,6 @@ body {
     background-size: cover;
 }
 
-.guide_container {}
-
 .guide_container>button {
     float: right;
     padding: 5px;
